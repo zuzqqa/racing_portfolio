@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SteeringWheel from './components/SteeringWheel';
+import Screen from './components/Screen';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('welcome');
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Screen section={activeSection} /> 
+      <SteeringWheel onButtonClick={setActiveSection} />
     </div>
   );
 }
-
 export default App;
