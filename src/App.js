@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import SteeringWheel from './components/SteeringWheel';
-import Screen from './components/Screen';
+import React, { useEffect } from 'react';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('welcome');
+  // turn off scrolling
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'; 
+  }, []);
   
   return (
-    <div className="App">
-      <Screen section={activeSection} /> 
-      <SteeringWheel onButtonClick={setActiveSection} />
+    <div>
+      <h1>Witamy na mojej stronie portfolio!</h1>
+      <p>Scrollowanie jest zawsze zablokowane.</p>
     </div>
   );
 }
