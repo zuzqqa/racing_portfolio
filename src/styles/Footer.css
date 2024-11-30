@@ -1,0 +1,54 @@
+/* Footer styles */
+
+footer {
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #24262b;
+    justify-content: center;
+    box-shadow: 0px -3px 26px 0px rgba(66, 68, 90, 1);
+    border-radius: 40% 40% 0% 0%;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-right: 4px;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialIcons a {
+    text-decoration: none;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .socialIcons a i {
+    font-size: 0.8em;
+    color: #000000;
+    opacity: 0.9;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  
+  /* Hover effect */
+  
+  .socialIcons a:hover {
+    background-color: #24262b;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+    background-color: #24262b;
+  }
