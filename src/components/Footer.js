@@ -44,7 +44,7 @@ const Footer = () => {
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
                 </div>
-                <p>© 2024 - Portfolio</p>
+                <p>© 2025 - Portfolio</p>
             </div>
         </footer>
     );

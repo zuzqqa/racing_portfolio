@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Footer from './components/Footer';
+import "./styles/App.css";
 
 function App() {
   useEffect(() => {
@@ -11,9 +12,8 @@ function App() {
   }, []);
   
   return (
-    <div>
-      <h1>Witamy na mojej stronie portfolio!</h1>
-      <p>Scrollowanie jest zawsze zablokowane.</p>
+    <div className='app'>
+
       <Footer />
     </div>
   );
